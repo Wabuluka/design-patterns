@@ -1,16 +1,22 @@
-class Product{
+const product = require('./product/product');
+
+class Cart{
     constructor(){
-        this.products = [];
+        this.carts = [];
     }
 
     addProduct(pdt){
-        return this.products.push(pdt)
+        return this.carts.push(pdt);
     }
-    listProducts(){
-        return this.products;
+
+    listCart(){
+        return `Your cart: ${this.carts}`;
     }
 }
-let p = new Product()
-p.addProduct('book');
 
-console.log(p.listProducts())
+let p = new Cart();
+p.addProduct('book');
+p.addProduct('soda');
+p.addProduct('cake');
+
+console.log(p.listCart());
