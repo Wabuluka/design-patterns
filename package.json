@@ -16,7 +16,10 @@
     "url": "https://github.com/Wabuluka/design-patterns/issues"
   },
   "homepage": "https://github.com/Wabuluka/design-patterns#readme",
-  "dependencies": {
-    "eslint": "^7.10.0"
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
   }
 }
